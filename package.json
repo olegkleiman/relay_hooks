@@ -1,0 +1,37 @@
+{
+  "name": "relay_hooks",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack serve --port 5601 --mode=development",
+    "compile": "webpack --mode=development",
+    "relay": "relay-compiler --src ./src --schema schema/schema.graphql",
+    "flow": "flow"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-error-boundary": "^3.1.4",
+    "react-relay": "^13.2.0",
+    "relay-hooks": "^7.0.0",
+    "relay-runtime": "^13.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.8",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-flow": "^7.16.7",
+    "@babel/preset-react": "^7.16.7",
+    "babel-loader": "^8.2.3",
+    "babel-plugin-relay": "^13.2.0",
+    "babel-polyfill": "^6.26.0",
+    "css-loader": "^6.7.1",
+    "dotenv": "^16.0.0",
+    "relay-compiler": "^13.2.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  }
+}
